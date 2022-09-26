@@ -4,3 +4,15 @@
     text-decoration: none;
     box-sizing: border-box;
 }
+body{
+    background: #000000;
+    color: #fff;
+}
+#header{
+    background-color: #080808;
+    width: 100%;
+    height: 100vh;
+    background-image: url(/portfolio/Assets/img/bg-removebg-preview.png);
+    background-repeat: no-repeat;
+    background-position: right;
+}
