@@ -5,6 +5,51 @@
     box-sizing: border-box;
 }
 
+/* loaderstart */
+.page-loader{
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 999;
+    background-color: var(--white-alpha-25);
+    backdrop-filter: var(--backdrop-filter-blur);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.6s ease;
+}
+.page-loader .fade-out{
+    opacity: 0;
+}
+.page-loader div{
+    border: 2px solid transparent;
+    position: absolute;
+    border-radius: 50%;
+    opacity: 0.6;
+    border-top: transparent !important;
+    border-bottom: transparent !important;
+    animation: spin 1s linear infinite;
+}
+.page-loader div:nth-child(1){
+    height: 60px;
+    width: 60px;
+    border-color: var(--main-color);
+}
+.page-loader div:nth-child(2){
+    height: 45px;
+    width: 45px;
+    border-color: var(--blue);
+    animation-duration: 1.2s;
+}
+.page-loader div:nth-child(3){
+    height: 30px;
+    width: 30px;
+    border-color: var(--orange);
+}
+/* loaderend */
+
 @font-face {
     font-family: "popins";
     src: url(../fonts/Poppins-Regular.ttf);
@@ -70,13 +115,15 @@ nav ul li a:hover::after {
 }
 
 .header-text {
-    margin-top: 20%;
+    margin-top: 10%;
+    margin-bottom: 10%;
     font-size: 30px;
 }
 
 .header-text h1 {
     font-size: 60px;
-    margin-top: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .header-text h1 span {
@@ -118,7 +165,8 @@ nav ul li a:hover::after {
 }
 
 .tab-links {
-    margin-right: 50px;
+    margin-left: 25px;
+    margin-right: 25px;
     font-size: 18px;
     font-weight: 500;
     cursor: pointer;
@@ -166,7 +214,8 @@ nav ul li a:hover::after {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-gap: 40px;
-    margin-top: 50px;
+    margin-top: 25px;
+    margin-bottom: 25px;
 }
 
 .service-list div {
@@ -181,14 +230,16 @@ nav ul li a:hover::after {
 .service-list div h2 {
     font-size: 30px;
     font-weight: 500;
-    margin-bottom: 15px;
+    margin-bottom: 7px;
+    margin-top: 7px;
 }
 
 .service-list div a {
     font-size: 13px;
     color: aliceblue;
     display: inline-block;
-    margin-top: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .service-list div:hover {
@@ -204,7 +255,8 @@ nav ul li a:hover::after {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-gap: 40px;
-    margin-top: 50px;
+    margin-top: 25px;
+    margin-bottom: 25px;
 }
 
 .work {
@@ -241,12 +293,14 @@ nav ul li a:hover::after {
 
 .layer h3 {
     font-weight: 500;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
+    margin-top: 10px;
 }
 
 .layer a {
     /* color: aliceblue; */
-    margin-top: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
     font-size: 18px;
     line-height: 60px;
     background: #fff;
@@ -289,22 +343,24 @@ nav ul li a:hover::after {
     flex-basis: 60%;
 }
 
-.contact-left p{
+.contact-left p {
     margin-top: 15px;
     margin-bottom: 15px;
 }
-.contact-left p i{
+
+.contact-left p i {
     color: #ff004f;
     margin-right: 15px;
     font-size: 25px;
 
 }
 
-.social-icons{
+.social-icons {
     margin-top: 15px;
     margin-bottom: 15px;
 }
-.social-icons a{
+
+.social-icons a {
     color: #ababab;
     font-size: 30px;
     margin-left: 7px;
@@ -313,12 +369,69 @@ nav ul li a:hover::after {
     transition: transform 0.5s;
 }
 
-.social-icons a:hover{
+.social-icons a:hover {
     color: #ff004f;
     transform: translateY(-8px);
 }
 
-.btn.btn2{
+.btn.btn2 {
     display: inline-block;
-    /* background: #ff004f; */
+    background: #ff004f;
+}
+
+.contact-right form {
+    width: 100%;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 15px;
+    margin: 15px 0;
+    border: 0;
+    outline: none;
+    background: #262626;
+    color: #fff;
+    font-size: 17px;
+    border-radius: 10px;
+    font-family: "popins";
+}
+
+form .btn2 {
+    padding: 14px 60px;
+    font-size: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.copyright {
+    width: 100%;
+    background: #262626;
+    padding: 25px 0;
+    text-align: center;
+    font-weight: 300;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.copyright i {
+    color: #ff004f;
+}
+nav .fas{
+    display: none;
+}
+/* ------------------responssive----------------- */
+
+@media only screen and (max-width:600px){
+    #header{
+        background-image: url(/Assets/img/bg-removebg-preview.png);
+    }
+    .header-text{
+        margin-top: 100%;
+        font-size: 16px;
+    }
+    .header-text h1{
+        font-size: 30px;
+    }
 }
