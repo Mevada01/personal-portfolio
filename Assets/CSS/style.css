@@ -117,7 +117,7 @@ nav ul li a:hover::after {
     margin: 20px 0 40px;
 }
 
-.tab-links{
+.tab-links {
     margin-right: 50px;
     font-size: 18px;
     font-weight: 500;
@@ -136,38 +136,40 @@ nav ul li a:hover::after {
     transition: 0.5s ease;
 }
 
-.tab-links.active-link::after{
+.tab-links.active-link::after {
     width: 50%;
 }
 
-.tab-contents ul li{
+.tab-contents ul li {
     list-style: none;
     margin: 10px 0;
 }
 
-.tab-contents ul li span{
+.tab-contents ul li span {
     color: #ff004f;
     font-size: 14px;
 }
-.tab-contents{
+
+.tab-contents {
     display: none;
 }
-.tab-contents.active-tab{
-    display: block ;
+
+.tab-contents.active-tab {
+    display: block;
 }
 
-#service{
+#service {
     padding: 30px 0;
 }
 
-.service-list{
+.service-list {
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-gap: 40px;
     margin-top: 50px;
 }
 
-.service-list div{
+.service-list div {
     background: #262626;
     padding: 40px;
     font-size: 13px;
@@ -176,54 +178,56 @@ nav ul li a:hover::after {
     transition: background 0.5s, transform 0.5s;
 }
 
-.service-list div h2{
+.service-list div h2 {
     font-size: 30px;
     font-weight: 500;
     margin-bottom: 15px;
 }
 
-.service-list div a{
+.service-list div a {
     font-size: 13px;
     color: aliceblue;
     display: inline-block;
     margin-top: 20px;
 }
 
-.service-list div:hover{
+.service-list div:hover {
     background: #ff004f;
     transform: translateY(-10px);
 }
 
-#portfolio{
+#portfolio {
     padding: 50px 0;
 }
 
-.work-list{
+.work-list {
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-gap: 40px;
     margin-top: 50px;
 }
-.work{
-        border-radius: 10px;
-        position: relative;
-        overflow: hidden;
+
+.work {
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
 }
-.work img{
-    width: 100%;    
+
+.work img {
+    width: 100%;
     border-radius: 10px;
     display: block;
     transition: transform 0.5s
 }
 
-.layer{
+.layer {
     width: 100%;
     height: 0;
-    background: linear-gradient(rgba(0,0,0,6), #ff005186);
-    border-radius:10px ;
-    position:absolute;
+    background: linear-gradient(rgba(0, 0, 0, 6), #ff005186);
+    border-radius: 10px;
+    position: absolute;
     left: 0;
-    bottom:0 ;
+    bottom: 0;
     overflow: hidden;
     display: flex;
     align-items: center;
@@ -235,11 +239,12 @@ nav ul li a:hover::after {
     transition: height 0.5s;
 }
 
-.layer h3{
+.layer h3 {
     font-weight: 500;
     margin-bottom: 20px;
 }
-.layer a{
+
+.layer a {
     /* color: aliceblue; */
     margin-top: 20px;
     font-size: 18px;
@@ -251,27 +256,69 @@ nav ul li a:hover::after {
     text-align: center;
 }
 
-.work:hover img{
+.work:hover img {
     transform: scale(1.1);
 }
 
-.work:hover .layer{
+.work:hover .layer {
     height: 100%;
     cursor: pointer;
 }
 
-.btn{
+.btn {
     display: block;
     margin: 50px auto;
     width: fit-content;
-    border: 1px solid #ff004f ;
+    border: 1px solid #ff004f;
     padding: 14px 50px;
     border-radius: 6px;
     color: #fff;
 }
 
-.btn:hover{
+.btn:hover {
     background: #ff00519b;
     color: #fff;
     transition: 0.5s;
+}
+
+.contact-left {
+    flex-basis: 35%;
+}
+
+.contact-right {
+    flex-basis: 60%;
+}
+
+.contact-left p{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.contact-left p i{
+    color: #ff004f;
+    margin-right: 15px;
+    font-size: 25px;
+
+}
+
+.social-icons{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.social-icons a{
+    color: #ababab;
+    font-size: 30px;
+    margin-left: 7px;
+    margin-right: 7px;
+    display: inline-block;
+    transition: transform 0.5s;
+}
+
+.social-icons a:hover{
+    color: #ff004f;
+    transform: translateY(-8px);
+}
+
+.btn.btn2{
+    display: inline-block;
+    /* background: #ff004f; */
 }
