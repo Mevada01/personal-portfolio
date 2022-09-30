@@ -14,26 +14,19 @@
 </head>
 
 <body>
-    <!--=========Page Loader Start============-->
-    <div class="page-loader">
-        <div></div>
-        <div></div>
-        <div></div>
-    </div>
-    <!--=========Page Loader End============-->
     <div id="header">
         <div class="container">
             <nav>
                 <img src="Assets/img/logo-harsh.png" class="logo" alt="">
-                <ul>
+                <ul id="sidemenu">
                     <li class="active-link"><a href="#">Home</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#service">Service</a></li>
                     <li><a href="#portfolio">Portfolio</a></li>
                     <li><a href="#contact">Contact</a></li>
-                    <!-- <i class="fa-solid fa-times"></i> -->
+                    <i class="fas fa-times" onclick="closemenu()"></i>
                 </ul>
-                <!-- <i class="fa-solid fa-bars"></i> -->
+                <i class="fas fa-bars" onclick="openmenu()"></i>
             </nav>
             <div class="header-text">
                 <p>Front-end Developer</p>
@@ -222,7 +215,16 @@
             }, 1500);
         });
     </script>
+    <script>
+        var sidemenu = document.getElementById("sidemenu")
 
+        function openmenu(){
+            sidemenu.style.right="0";
+        }
+        function closemenu(){
+            sidemenu.style.right="-200px";
+        }
+    </script>
 </body>
 
 </html>

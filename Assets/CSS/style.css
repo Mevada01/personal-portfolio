@@ -6,7 +6,7 @@
 }
 
 /* loaderstart */
-.page-loader{
+/* .page-loader{
     position: fixed;
     left: 0;
     top: 0;
@@ -47,7 +47,7 @@
     height: 30px;
     width: 30px;
     border-color: var(--orange);
-}
+} */
 /* loaderend */
 
 @font-face {
@@ -418,20 +418,53 @@ form .btn2 {
 .copyright i {
     color: #ff004f;
 }
-nav .fas{
+
+nav .fas {
     display: none;
 }
+
 /* ------------------responssive----------------- */
 
-@media only screen and (max-width:600px){
-    #header{
+@media only screen and (max-width:600px) {
+    #header {
         background-image: url(/Assets/img/bg-removebg-preview.png);
     }
-    .header-text{
+
+    .header-text {
         margin-top: 100%;
         font-size: 16px;
     }
-    .header-text h1{
+
+    .header-text h1 {
         font-size: 30px;
+    }
+
+    nav .fas {
+        display: block;
+        font-size: 25px;
+    }
+
+    nav ul {
+
+        background: #ff004f;
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 25px;
+    }
+
+    nav .fas {
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
     }
 }
