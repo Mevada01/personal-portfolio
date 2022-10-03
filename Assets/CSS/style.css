@@ -141,6 +141,7 @@ nav ul li a:hover::after {
 .row {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .about-col-1 {
@@ -339,11 +340,11 @@ nav ul li a:hover::after {
 }
 
 .contact-left {
-    flex-basis: 35%;
+    width: 35%;
 }
 
 .contact-right {
-    flex-basis: 60%;
+    width: 60%;
 }
 
 .contact-left p {
@@ -490,7 +491,7 @@ nav .fas {
         margin-right: 10px;
     }
     .contact-left, .contact-right{
-        flex-basis: 100%;
+        width: 100%;
     }
     .copyright{
         font-size: 14px;
