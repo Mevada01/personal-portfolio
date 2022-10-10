@@ -14,7 +14,8 @@
 </head>
 
 <body>
-    <div id="header">
+    <a id="button"></a>
+    <header>
         <div class="container">
             <nav>
                 <img src="Assets/img/logo-harsh.png" class="logo" alt="">
@@ -30,13 +31,14 @@
             </nav>
             <div class="header-text">
                 <p>Front-end Developer</p>
-                <h1>Hi, I'm <span>Harsh</span><br> Mevada From Ahemedabad</h1>
+                <h1>Hi, I'm <span>Harsh</span><br> Mevada From Ahmedabad</h1>
             </div>
         </div>
-    </div>
+    </header>
     <div id="about">
         <div class="container">
             <div class="row">
+
                 <div class="about-col-1">
                     <img src="Assets/img/IMG_0747.JPG" alt="">
                 </div>
@@ -171,6 +173,7 @@
                         <a href="https://www.linkedin.com/in/mevada-harsh-680729231/"><i
                                 class="fa-brands fa-linkedin"></i></a>
                         <a href="https://github.com/Mevada01"><i class="fa-brands fa-github"></i></a>
+                        <!-- https://api.whatsapp.com/send?phone=+91-8200113639 -->
                     </div>
                     <a href="Assets/img/Harsh-Mevada_resume.pdf" download class="btn btn2">Download CV</a>
                 </div>
@@ -236,15 +239,32 @@
             e.preventDefault()
             fetch(scriptURL, { method: 'POST', body: new FormData(form) })
                 .then(response => {
-                    msg.innerHTML ="Message sent successfully"
-                    setTimeout(function()
-                    {
-                        msg.innerHTML -""
-                    },5000)
+                    msg.innerHTML = "Message sent successfully"
+                    setTimeout(function () {
+                        msg.innerHTML - ""
+                    }, 50)
                     form.reset()
                 })
                 .catch(error => console.error('Error!', error.message))
         })
+    </script>
+    <script>
+        var btn = $('#button');
+
+        $(window).scroll(function () {
+            if ($(window).scrollTop() > 300) {
+                btn.addClass('show');
+            } else {
+                btn.removeClass('show');
+            }
+        });
+
+        btn.on('click', function (e) {
+            e.preventDefault();
+            $('html, body').animate({ scrollTop: 0 }, '300');
+        });
+
+
     </script>
 </body>
 
