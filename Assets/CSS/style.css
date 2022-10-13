@@ -554,3 +554,6 @@ nav .fas {
     opacity: 1;
     visibility: visible;
   }
+  .contact-right span{
+    display: none !important;
+  }
