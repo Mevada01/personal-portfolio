@@ -436,7 +436,7 @@ nav .fas {
 
 @media only screen and (max-width:600px) {
     header {
-        background-image: url(/Assets/img/bg-removebg-preview.png);
+        background-image: url(../img/bg-removebg-preview.png);
     }
 
     .header-text {
