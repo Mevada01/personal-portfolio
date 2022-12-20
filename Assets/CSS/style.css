@@ -69,7 +69,7 @@ header {
     background-color: #080808;
     width: 100%;
     height: 100vh;
-    /* background-image: url(../img/bg-removebg-preview.png); */
+    background-image: url(../img/[removal.ai]_tmp-63a169716ad32.png);
     background-repeat: no-repeat;
     background-position: right;
 }
@@ -141,7 +141,7 @@ nav ul li a:hover::after {
 
 .row {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
 }
 
@@ -156,6 +156,7 @@ nav ul li a:hover::after {
 
 .about-col-2 {
     flex-basis: 60%;
+    align-items: center;
 }
 
 .sub-title {
