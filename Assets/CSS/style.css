@@ -158,7 +158,8 @@ nav ul li a:hover::after {
 
 .about-col-2 {
     flex-basis: 60%;
-    align-items: center;
+    margin-left: 30px;
+    /* align-items: center; */
 }
 
 .sub-title {
