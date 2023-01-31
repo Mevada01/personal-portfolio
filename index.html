@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords"
+        content="Harsh Mevada,HarshMevada, harshmevada, harsh mevada, HM-The-Company-of-IT, harsh mevada photography,">
     <title>Harsh Mevada Portfolio </title>
     <link rel="stylesheet" href="Assets/CSS/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
@@ -12,183 +14,207 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://kit.fontawesome.com/34b55c0ee8.js" crossorigin="anonymous"></script>
 </head>
-    
-<body oncontextmenu="return false">
-    <a id="button"></a>
-    <header>
-        <div class="container">
-            <nav>
-                <img src="Assets/img/logo-harsh.png" class="logo" alt="">
-                <ul id="sidemenu">
-                    <li class="active-link"><a href="#">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#service">Service</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <i class="fas fa-times" onclick="closemenu()"></i>
-                </ul>
-                <i class="fas fa-bars" onclick="openmenu()"></i>
-            </nav>
-            <div class="header-text">
-                <p>Front-end Developer</p>
-                <h1>Hi, I'm <span>Harsh</span><br> Mevada From Ahmedabad</h1>
-            </div>
-        </div>
-    </header>
-    <div id="about">
-        <div class="container">
-            <div class="row">
 
-                <div class="about-col-1">
-                    <img src="Assets/img/IMG_0747.JPG" alt="">
+<body oncontextmenu="return false" onload="loadweb()">
+    <div class="page-loader">
+        loading
+    </div>
+    <div class="main hidden">
+        <a id="button"></a>
+        <header class="home-section active">
+            <div class="container">
+                <nav>
+                    <img src="Assets/img/logo-harsh.png" class="logo" alt="">
+                    <ul id="sidemenu">
+                        <li class="active-link"><a href="#">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#service">Service</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <i class="fas fa-times" onclick="closemenu()"></i>
+                    </ul>
+                    <i class="fas fa-bars" onclick="openmenu()"></i>
+                </nav>
+                <div class="header-text">
+                    <p>Front-end Developer</p>
+                    <h1>Hi, I'm <span>Harsh</span><br> Mevada From Ahmedabad</h1>
                 </div>
-                <div class="about-col-2">
-                    <h2 class="sub-title">About Me</h2>
-                    <p>To work with an Organization this will provide good conceptual
-                        environment, performance based work culture and to utilize my
-                        knowledge and skills in the best possible way.
-                        </p>
-                    <div class="tab-title">
-                        <div class="tab-links active-link" onclick="opentab('skills')">skills</div>
-                        <div class="tab-links " onclick="opentab('experience')">Experience</div>
-                        <div class="tab-links " onclick="opentab('education')">Education</div>
+            </div>
+        </header>
+        <div id="about">
+            <div class="container">
+                <div class="row">
+
+                    <div class="about-col-1">
+                        <img src="Assets/img/IMG_0747.JPG" alt="">
                     </div>
-                    <div class="tab-contents active-tab" id="skills">
-                        <ul>
-                            <li><span>Web Designing</span><br>Design a Website using HTML CSS Js</li>
-                            <li><span>Web Development</span><br>Web App Development</li>
-                            <!-- <li><span>Java Script</span></li>
+                    <div class="about-col-2">
+                        <h2 class="sub-title">About Me</h2>
+                        <p>To work with an Organization this will provide good conceptual
+                            environment, performance based work culture and to utilize my
+                            knowledge and skills in the best possible way.
+                        </p>
+                        <div class="tab-title">
+                            <div class="tab-links active-link" onclick="opentab('skills')">skills</div>
+                            <div class="tab-links " onclick="opentab('experience')">Experience</div>
+                            <div class="tab-links " onclick="opentab('education')">Education</div>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>Web Designing</span><br>Design a Website using HTML CSS Js</li>
+                                <li><span>Web Development</span><br>Web App Development</li>
+                                <!-- <li><span>Java Script</span></li>
                             <li><span>BootStrap</span></li>
                             <li><span>Jquery</span></li> -->
-                        </ul>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span>Training</span><br>Tops Technologies</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>2022 - Current</span><br>Front-end Developer Training at Tops Technologies
+                                </li>
+                                <li><span>2018 - 2022</span><br>Diploma Engneering in Information Technology (I.T.)</li>
+                                <li><span>2017 - 2018</span><br>10<sup>th</sup> From Mani-krupa Higher Secondry School
+                                </li>
+                            </ul>
+                        </div>
                     </div>
-                    <div class="tab-contents" id="experience">
-                        <ul>
-                            <li><span>Training</span><br>Tops Technologies</li>
-                        </ul>
+                </div>
+            </div>
+        </div>
+        <!-- ---------------------service----------------- -->
+
+        <div id="service">
+            <div class="container">
+                <div class="sub-title">My Service</div>
+                <div class="service-list">
+                    <div>
+                        <i class="fa-solid fa-code"></i>
+                        <h2>Web Design</h2>
+                        <p>I create unique, Smart, Effective Web Design Solutions which will help our Client’s business
+                            to
+                            expand their customer base and achieve their business goals.</p>
+                        <a href="#">learn More </a>
                     </div>
-                    <div class="tab-contents" id="education">
-                        <ul>
-                            <li><span>2022 - Current</span><br>Front-end Developer Training at Tops Technologies</li>
-                            <li><span>2018 - 2022</span><br>Diploma Engneering in Information Technology (I.T.)</li>
-                            <li><span>2017 - 2018</span><br>10<sup>th</sup> From Mani-krupa Higher Secondry School</li>
-                        </ul>
+                    <div>
+                        <i class="fa-solid fa-code"></i>
+                        <h2>Web Development</h2>
+                        <p>Enhancing Business Capabilities with Custom Web Applications Developed to meet Client’s
+                            Business
+                            Challenges.</p>
+                        <a href="#">learn More </a>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <!-- ---------------------service----------------- -->
+        <!-- ---------------------portfolio----------------- -->
 
-    <div id="service">
-        <div class="container">
-            <div class="sub-title">My Service</div>
-            <div class="service-list">
-                <div>
-                    <i class="fa-solid fa-code"></i>
-                    <h2>Web Design</h2>
-                    <p>I create unique, Smart, Effective Web Design Solutions which will help our Client’s business to
-                        expand their customer base and achieve their business goals.</p>
-                    <a href="#">learn More </a>
+        <div id="portfolio">
+            <div class="container">
+                <h2 class="sub-title">My Work</h2>
+                <div class="work-list">
+                    <div class="work">
+                        <img src="Assets/img/work-5.png" alt="">
+                        <div class="layer">
+                            <h3>My Company</h3>
+                            <p>HM The Company of I.T.
+                            </p>
+                            <a href="https://mevada01.github.io/HM-The-Company-of-IT/" target="_blank"><i
+                                    class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <!-- <i class="fa-solid fa-user"></i> -->
+                        <img src="Assets/img/work-4.png" alt="">
+                        <div class="layer">
+                            <h3>Ahmedabad Metro</h3>
+                            <p>You Can See What is Ahmedabad Metro
+                            </p>
+                            <a href="https://mevada01.github.io/ahmedabad-metro/" target="_blank"><i
+                                    class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="Assets/img/wrok-3.png" alt="">
+                        <div class="layer">
+                            <h3>Wedding Book</h3>
+                            <p>This website is book a wedding plan
+                            </p>
+                            <a href="https://mevada01.github.io/wedding/index.html" target="_blank"><i
+                                    class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
                 </div>
-                <div>
-                    <i class="fa-solid fa-code"></i>
-                    <h2>Web Development</h2>
-                    <p>Enhancing Business Capabilities with Custom Web Applications Developed to meet Client’s Business
-                        Challenges.</p>
-                    <a href="#">learn More </a>
+                <a href="#" class="btn">See More</a>
+            </div>
+        </div>
+        <!-- ---------------------portfolio----------------- -->
+        <!--=========Background Circles Start============-->
+        <div class="bg-circles">
+            <div class="circle-1"></div>
+            <div class="circle-2"></div>
+            <div class="circle-3"></div>
+            <div class="circle-4"></div>
+        </div>
+        <!--=========Background Circles End============-->
+        <!--=========Overlay Start============-->
+        <div class="overlay">
+        </div>
+        <!--=========Overlay End============-->
+
+
+        <div id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h2 class="sub-title">Contact Me</h2>
+                        <p><i class="fa-solid fa-envelope"></i><a href="mailto:harsh.b.mevada@gmail.com">
+                                harsh.b.mevada@gmail.com</a></p>
+                        <p><i class="fa-solid fa-square-phone"></i> <a href="tel:+ 91 8511708845">+91 8511708845</a></p>
+                        <div class="social-icons">
+                            <a href="https://www.facebook.com/harsh.mevada.146/"><i
+                                    class="fa-brands fa-facebook"></i></a>
+                            <a href="https://www.instagram.com/i_hm_0126_/"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                            <a href="https://www.linkedin.com/in/mevada-harsh-680729231/"><i
+                                    class="fa-brands fa-linkedin"></i></a>
+                            <a href="https://github.com/Mevada01"><i class="fa-brands fa-github"></i></a>
+                            <!-- https://api.whatsapp.com/send?phone=+91-8200113639 -->
+                        </div>
+                        <a href="Assets/img/Harsh-Mevada_resume.pdf" download class="btn btn2">Download CV</a>
+                    </div>
+                    <div class="contact-right">
+                        <form name="submit-to-google-sheet" Method="post" action="">
+                            <input type="text" name="Name" placeholder="Your Name" required>
+                            <input type="email" name="Email" placeholder="Your Email" required>
+                            <textarea name="Message" placeholder="Your Message" rows="6"></textarea>
+                            <input type="submit" value="Submit" class="btn btn2">
+                        </form>
+                        <span id="msg"></span>
+                    </div>
                 </div>
+            </div>
+            <div class="copyright">
+                <p>Copyright ©️ Harsh Mevada. <i class="fa-solid fa-heart"></i> </p>
             </div>
         </div>
     </div>
-    <!-- ---------------------portfolio----------------- -->
 
-    <div id="portfolio">
-        <div class="container">
-            <h2 class="sub-title">My Work</h2>
-            <div class="work-list">
-                <div class="work">
-                    <img src="Assets/img/work-5.png" alt="">
-                    <div class="layer">
-                        <h3>My Company</h3>
-                        <p>HM The Company of I.T.
-                        </p>
-                        <a href="https://mevada01.github.io/HM-The-Company-of-IT/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                    </div>
-                </div>
-                <div class="work">
-                    <!-- <i class="fa-solid fa-user"></i> -->
-                    <img src="Assets/img/work-4.png" alt="">
-                    <div class="layer">
-                        <h3>Ahmedabad Metro</h3>
-                        <p>You Can See What is Ahmedabad Metro
-                        </p>
-                        <a href="https://mevada01.github.io/ahmedabad-metro/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                    </div>
-                </div>
-                <div class="work">
-                    <img src="Assets/img/wrok-3.png" alt="">
-                    <div class="layer">
-                        <h3>Wedding Book</h3>
-                        <p>This website is book a wedding plan  
-                        </p>
-                        <a href="https://mevada01.github.io/wedding/index.html" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                    </div>
-                </div>
-            </div>
-            <a href="#" class="btn">See More</a>
-        </div>
-    </div>
-    <!-- ---------------------portfolio----------------- -->
-    <!--=========Background Circles Start============-->
-    <div class="bg-circles">
-        <div class="circle-1"></div>
-        <div class="circle-2"></div>
-        <div class="circle-3"></div>
-        <div class="circle-4"></div>
-    </div>
-    <!--=========Background Circles End============-->
-    <!--=========Overlay Start============-->
-    <div class="overlay">
-    </div>
-    <!--=========Overlay End============-->
-
-
-    <div id="contact">
-        <div class="container">
-            <div class="row">
-                <div class="contact-left">
-                    <h2 class="sub-title">Contact Me</h2>
-                    <p><i class="fa-solid fa-envelope"></i><a href="mailto:harsh.b.mevada@gmail.com">
-                            harsh.b.mevada@gmail.com</a></p>
-                    <p><i class="fa-solid fa-square-phone"></i> <a href="tel:+ 91 8511708845">+91 8511708845</a></p>
-                    <div class="social-icons">
-                        <a href="https://www.facebook.com/harsh.mevada.146/"><i class="fa-brands fa-facebook"></i></a>
-                        <a href="https://www.instagram.com/i_hm_0126_/"><i class="fa-brands fa-instagram"></i></a>
-                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                        <a href="https://www.linkedin.com/in/mevada-harsh-680729231/"><i
-                                class="fa-brands fa-linkedin"></i></a>
-                        <a href="https://github.com/Mevada01"><i class="fa-brands fa-github"></i></a>
-                        <!-- https://api.whatsapp.com/send?phone=+91-8200113639 -->
-                    </div>
-                    <a href="Assets/img/Harsh-Mevada_resume.pdf" download class="btn btn2">Download CV</a>
-                </div>
-                <div class="contact-right">
-                    <form name="submit-to-google-sheet" Method="post" action="">
-                        <input type="text" name="Name" placeholder="Your Name" required>
-                        <input type="email" name="Email" placeholder="Your Email" required>
-                        <textarea name="Message" placeholder="Your Message" rows="6"></textarea>
-                        <input type="submit" value="Submit" class="btn btn2">
-                    </form>
-                    <span id="msg"></span>
-                </div>
-            </div>
-        </div>
-        <div class="copyright">
-            <p>Copyright ©️ Harsh Mevada. <i class="fa-solid fa-heart"></i> </p>
-        </div>
-    </div>
-
+    <script>
+        window.addEventListener("load", () => {
+            document.querySelector(".main").classList.remove("hidden");
+            document.querySelector(".home-section").classList.add("active");
+            /*================Page Loader================ */
+            document.querySelector(".page-loader").classList.add("fade-out");
+            setTimeout(() => {
+                document.querySelector(".page-loader").style.display = "none";
+            }, 5000);
+        });
+    </script>
 
 
     <script>
