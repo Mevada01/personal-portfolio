@@ -1,5 +1,5 @@
 var loader = document.getElementById("preloader");
-window.addEventListener("load", function(){
+window.addEventListener("load", function () {
     setTimeout(() => {
         document.getElementById("preloader").style.display = "none";
     }, 3400);
@@ -33,11 +33,16 @@ window.addEventListener("load", () => {
 
 var sidemenu = document.getElementById("sidemenu")
 
+
 function openmenu() {
     sidemenu.style.right = "0";
+    $(".slideoverlay").addClass("active");
+
 }
 function closemenu() {
     sidemenu.style.right = "-200px";
+    $(".slideoverlay").removeClass("active");
+
 }
 
 
@@ -75,3 +80,31 @@ btn.on('click', function (e) {
 });
 
 
+
+
+
+//  sidebar js 
+
+$(document).ready(function () {
+    $(".slideoverlay").on("click", function () {
+        $("#sidemenu").css("right", "-200px");
+        $(".slideoverlay").removeClass("active");
+    });
+
+    // $(".menu-icon-bx").on("click", function () {
+    // 	$("#sidebar").addClass("active");
+    // 	$(".slideoverlay").addClass("active");
+    // 	$(".menu-icon-bx").addClass("active");
+    // });
+});
+
+
+
+// typing effect js 
+alert("Message sent successfully")
+var typing = new Typed(".text", {
+    strings: ["", "Youtuber", "Freelancer", "Graphics Designer", "Web Designer", "Web Developer"],
+    typeSpeed: 100,
+    backSpeed: 40,
+    loop: true,
+});

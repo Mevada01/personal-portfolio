@@ -13,20 +13,24 @@
     <title>Harsh Mevada Portfolio </title>
     <link rel="canonical" href="https://www.gujaratfirst.com">
     <link rel="stylesheet" href="Assets/CSS/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    <link rel="stylesheet" href="Assets/CSS/font-awosome.css">
+    <script src="Assets/js/font-awosome.js"></script>
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
         integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <script src="https://kit.fontawesome.com/34b55c0ee8.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/34b55c0ee8.js" crossorigin="anonymous"></script> -->
 </head>
+<!-- oncontextmenu="return false" onload="loadweb()" -->
 
-<body oncontextmenu="return false" onload="loadweb()">
+<body onload="loadweb()" class="body">
     <div id="preloader">
     </div>
     <a id="button"></a>
-    <header>
+    <header class="header">
         <div class="container">
             <nav>
-                <img src="Assets/img/logo-harsh.png" class="logo" alt="">
+                <a href="/">
+                    <img src="Assets/img/logo-harsh-removebg-preview.png" class="logo" alt=""></a>
                 <ul id="sidemenu">
                     <li class="active-link"><a href="#">Home</a></li>
                     <li><a href="#about">About</a></li>
@@ -34,6 +38,7 @@
                     <li><a href="#portfolio">Portfolio</a></li>
                     <li><a href="#contact">Contact</a></li>
                     <i class="fas fa-times" onclick="closemenu()"></i>
+                    <li class="side-social"></li>
                 </ul>
                 <i class="fas fa-bars" onclick="openmenu()"></i>
             </nav>
@@ -151,7 +156,7 @@
                     </div>
                 </div>
             </div>
-            <a href="#" class="btn">See More</a>
+            <a href="my-work.html" class="btn">See More</a>
         </div>
     </div>
     <!-- ---------------------portfolio----------------- -->
@@ -203,7 +208,9 @@
             <p>Copyright ©️ Harsh Mevada. <i class="fa-solid fa-heart"></i> </p>
         </div>
     </div>
-
+    <div class="slideoverlay"></div>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"
+        integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
     <script src="Assets/js/script.js"></script>
 </body>
 
